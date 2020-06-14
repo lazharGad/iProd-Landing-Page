@@ -1,0 +1,533 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=GFS+Didot|Niconne&display=swap');
+
+
+  *
+  {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;  
+  }
+  header
+  {
+    overflow : hidden;
+    width : 100vw;
+    height : 100vh;
+    background-image: url('https://i.postimg.cc/ncV4XPrb/light-love-los-angeles-traveling-3379934-1.jpg');
+    background-size: 120vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin : 0 auto;
+    display : grid;
+    grid-template-rows : 1fr 6fr;
+    .header-content
+    {
+      position : absolute;
+      top : 50px;
+      right : 50px;
+      left : 50px;
+      bottom : 50px;
+      border : 2px solid #fff;
+      border-radius : 6px;
+      width : auto;
+      height : 85vh;
+      transition : .4s;
+    }
+   @media only screen and (max-width:900px) {
+
+      .header-content
+      {
+      position : absolute;
+      transition : .4s;
+      top : 0;
+      right : 0;
+      left : 0;
+      bottom : 0; 
+      height : 100vh;
+    }
+    }
+    nav
+    {
+      margin : 0 60px;
+      z-index : 99999;
+      .logo
+    {
+    line-height : 100px;
+    float : left;
+    margin-top: 25px;
+    h2
+    {
+      font-family : 'Montserrat';
+      letter-spacing : 4px;
+      color : #ddd;
+      span
+      {
+        color : #991C1C;
+      }
+    }
+  }
+  .menu
+  {
+    line-height : 100px;
+    float : right;
+  }
+  .menu 
+  {
+    a
+    {
+    text-decoration : none;
+    padding : 0 10px;
+    transition : 0.4s;
+    font-family : 'Montserrat';
+    letter-spacing : 2px;
+    color : #ddd;
+      font-size : 10px;
+      }
+  }
+  .show-menu-btn,.hide-menu-btn
+  {
+    transition : 0.4s;
+    font-size : 30px;
+    cursor : pointer;
+    display : none;
+  }
+  .show-menu-btn
+  {
+    float : right;
+
+  }
+  .show-menu-btn i
+  {
+    line-height : 100px;
+  }
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover
+  {
+    color : #299099;
+  }
+
+  #chk
+  {
+    position : absolute;
+    visibility : hidden;
+    z-index : -1111;
+  }
+  #meet
+    {
+      margin-left : 100px;
+      background-color: transparent;
+        color : #ddd;
+        border : 1px solid #fff;
+        padding : 8px 24px;
+        transition : .4s;
+        &:hover
+        {
+          border : 3px solid #ddd;
+          transition : .4s;
+        }
+        
+    }
+ @media screen and (max-width:768px)
+ {
+   .menu  
+    {
+      a
+      {
+      display : inline;
+      margin-right : -10px;
+      color : #ddd;
+      font-size : 10px;
+    }
+      }
+      }
+  @media screen and (max-width:768px)
+  {
+    .show-menu-btn,.hide-menu-btn
+    {
+      display : block;
+      transition : 0.4s;
+      i
+      {
+        color : #ddd;
+        transition : .4s;
+        &:hover
+        {
+          color : #fff;
+          transition : .4s;
+        }
+      }
+    }
+    .menu
+    {
+      position : fixed;
+      width : 100%;
+      height : 100vh;
+      background-color: #081213;
+      right : -100%;
+      top : 0;
+      text-align : center;
+      padding : 80px 0;
+      line-height : normal;
+      transition : 0.7s;
+      border : 2px solid #fff;
+      border-radius : 6px;
+      z-index : 2581;
+      
+    }
+    .menu  
+    {
+      a
+      {
+      display : block;
+      padding : 20px;
+      font-size : 20px;
+    }
+      }
+    #meet
+    {
+      margin-left : 0;
+      border : none;
+    }
+    .hide-menu-btn
+    {
+      position : absolute;
+      top : 40px;
+      right : 40px;
+      transition : .4s;
+      i
+      {
+        color : #ddd;
+        transition : .4s;
+      }
+    }
+    #chk:checked ~ .menu
+    {
+      right : 0;
+    }
+  }
+    }
+    
+    
+    .head
+    {
+      justify-self : center;
+      align-self : center;
+      margin : 350px auto;
+      
+    .animated-text
+      {
+        color: #fff;
+        transform: translate(-50%,-50%);
+        background: #2980b9;
+        padding: 0 40px;
+        height: 80px;
+        border-bottom : 1px solid rgba(221,221,221,0.3);
+        overflow : hidden;
+      }
+
+.line
+  {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 80px;
+  h1
+  {
+    font-family : 'Montserrat';
+    font-size : 25px;
+    font-weight : 400;
+    letter-spacing : 30px;
+    color : #ddd;
+  }
+   
+  }
+      .line1
+  {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 30px;
+  h1
+  {
+    font-family : 'Montserrat';
+    font-size : 25px;
+    font-weight : 400;
+    letter-spacing : 30px;
+    color : #ddd;
+  }
+  }
+    .line2
+    {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 40px;
+      line-height: 80px;
+  h1
+  {
+    font-family : 'Montserrat';
+    font-size : 25px;
+    font-weight : 400;
+    letter-spacing : 30px;
+    color : #ddd;
+  }
+      }
+
+.line{
+  animation: anim 12s infinite;
+}
+.line1
+ {
+  animation: anim1 12s infinite;   
+ }
+ .line2
+  {
+    animation: anim1 12s infinite;
+  }
+
+@keyframes anim {
+  0%{
+    margin-top: 0;
+    opacity : 0;
+  }
+  20%{
+    margin-top: -80px;
+    opacity : .5;
+  }
+
+  40%{
+    margin-top: 0;
+    opacity : 1;
+  }
+}
+      @keyframes anim1 {
+  60%{
+    margin-top: -80px;
+    opacity : 0;
+  }
+  80%{
+    margin-top: 0;
+    opacity : .5;
+  }
+
+  100%{
+    margin-top: 0;
+    opacity : 1;
+  }
+}
+       @keyframes anim2 {
+  120%{
+    margin-top: -80px;
+    opacity : 0;
+  }
+  140%{
+    margin-top: 0;
+    opacity : .5;
+  }
+
+  160%{
+    margin-top: 0;
+    opacity : 1;
+  }
+}
+     
+    }
+    @media screen and (max-width:768px)
+      {
+        .head
+        {
+          z-index : 2580;
+          margin : 350px auto;
+          .animated-text
+      {
+        color: #fff;
+        transform: translate(-50%,-50%);
+        background: #2980b9;
+        padding: 10px 40px;
+        height: 120px;
+        border-bottom : 1px solid rgba(221,221,221,0.3);
+        overflow: hidden;
+      }
+          .line
+  {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+  h1
+  {
+    font-family : 'Montserrat';
+    font-size : 20px;
+    font-weight : 400;
+    letter-spacing : 15px;
+    color : #ddd;
+  }
+   
+  }
+      
+      .line1
+  {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+  h1
+  {
+    font-family : 'Montserrat';
+    font-size : 15px;
+    font-weight : 400;
+    letter-spacing : 20px;
+    color : #ddd;
+  }
+  }
+      .line2
+      {
+        text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 45px;
+  h1
+  {
+    font-family : 'Montserrat';
+    font-size : 15px;
+    font-weight : 400;
+    letter-spacing : 20px;
+    color : #ddd;
+  }
+      }
+        }
+      }
+    @media screen and (max-width:600px)
+      {
+        .head
+        {
+        margin : 250px auto;
+          .animated-text
+      {
+        color: #fff;
+        transform: translate(-50%,-50%);
+        background: #2980b9;
+        padding: 10px 40px;
+        height: 120px;
+        border-bottom : 1px solid rgba(221,221,221,0.3);
+        overflow: hidden;
+      }
+          .line
+  {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+  h1
+  {
+    font-family : 'Montserrat';
+    font-size : 25px;
+    font-weight : 400;
+    letter-spacing : 15px;
+    color : #ddd;
+  }
+   
+  }
+      
+      .line1
+  {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+  h1
+  {
+    font-family : 'Montserrat';
+    font-size : 25px;
+    font-weight : 400;
+    letter-spacing : 15px;
+    color : #ddd;
+  }
+  }
+      .line2
+      {
+        text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 45px;
+  h1
+  {
+    font-family : 'Montserrat';
+    font-size : 25px;
+    font-weight : 400;
+    letter-spacing : 15px;
+    color : #ddd;
+    
+  }
+      }
+        }
+      }
+    @media screen and (max-width:450px)
+      {
+        .head
+        {
+        margin : 350px auto;
+          .animated-text
+      {
+        color: #fff;
+        transform: translate(-50%,-50%);
+        background: #2980b9;
+        padding: 10px 40px;
+        height: 100px;
+        border-bottom : 1px solid rgba(221,221,221,0.3);
+        overflow: hidden;
+      }
+          .line
+  {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+  h1
+  {
+    font-family : 'Montserrat';
+    font-size : 20px;
+    font-weight : 400;
+    letter-spacing : 10px;
+    color : #fff;
+  }
+   
+  }
+      
+      .line1
+  {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+  h1
+  {
+    font-family : 'Montserrat';
+    font-size : 25px;
+    font-weight : 400;
+    letter-spacing : 15px;
+    color : #ddd;
+  }
+  }
+      .line2
+      {
+        text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 45px;
+  h1
+    {
+    font-family : 'Montserrat';
+    font-size : 25px;
+    font-weight : 400;
+    letter-spacing : 15px;
+    color : #ddd;
+    
+    }
+  }
+  }
+  }
+}
+  
